@@ -1,23 +1,22 @@
 :root {
-    --clr-primary-light: #a3d4d4;
-    --clr-primary: #2875a5;
-    --clr-primary-dark: #05314c;
-    --clr-secondary: #333;
-    --clr-secondary-light: white;
-    --clr-accent: #b92e2a;
-    --clr-accent-dark: hsl(2, 66%, 35%);
-  }
-  
-  body {
-    /* Tar bort förinställd rymd i body, då jag hellre vill ändra det själv */
-    margin: 0;
-    padding: 0;
-    background-color:  var(--clr-secondary);
-    color: var(--clr-secondary-light);
-    font-family: "Poppins", sans-serif;
-  }
+  --clr-primary-light: #a3d4d4;
+  --clr-primary: #2875a5;
+  --clr-primary-dark: #05314c;
+  --clr-secondary: #333;
+  --clr-secondary-light: white;
+  --clr-accent: #b92e2a;
+  --clr-accent-dark: hsl(2, 66%, 35%);
+}
 
-  
+body {
+  /* Tar bort förinställd rymd i body, då jag hellre vill ändra det själv */
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-secondary);
+  color: var(--clr-secondary-light);
+  font-family: "Poppins", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -30,35 +29,35 @@ img {
   max-width: 100%;
 }
 
-#parent, .child, .grandchild{
-    border: solid 0.5em;
-    padding: 2em;
-    margin: 2em;
-    flex-grow: 1;
+#parent,
+.child,
+.grandchild {
+  border: solid 0.5em;
+  padding: 2em;
+  margin: 2em;
+  flex-grow: 1;
 }
 
-
-#parent{
-    display: flex;
-    background-color: var(--clr-primary-dark);
+#parent {
+  display: flex;
+  background-color: var(--clr-primary-dark);
 }
 
-.child{
-    display: flex;
-    background-color: var(--clr-primary);
+.child {
+  display: flex;
+  background-color: var(--clr-primary);
 }
 
-.grandchild{
-    background-color: var(--clr-primary-light);
+.grandchild {
+  background-color: var(--clr-primary-light);
 }
 
-.red{
-  background-color: var(--clr-accent);
+.red {
+  background-color: var(--clr-accent) !important;
 }
 
 @media screen and (max-width: 1440px) {
-    #parent{
-        flex-direction: column;
-    }
-    
+  #parent {
+    flex-direction: column;
+  }
 }

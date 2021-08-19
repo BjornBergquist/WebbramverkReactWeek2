@@ -83,6 +83,50 @@ header {
   border-radius: 0.2em;
 }
 
+@media screen and (max-width: 1063px) {
+  .hamburger--open .hamburger__line1 {
+    transform: translatey(0.425em) rotate(45deg);
+  }
+  .hamburger--open .hamburger__line2 {
+    transform: translatex(200%);
+    opacity: 0;
+  }
+  .hamburger--open .hamburger__line3 {
+    transform: translatey(-0.425em) rotate(-45deg);
+  }
+
+  .mainnav ul {
+    top: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    list-style-type: none;
+    background-color: var(--clr-primary);
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 400ms ease 300ms;
+  }
+
+  .mainnav ul.navlist--open {
+    transform: scaleY(1);
+    transition: transform 400ms ease;
+  }
+
+  .mainnav a {
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+
+  .mainnav ul.navlist--open a {
+    opacity: 1;
+    transition: opacity 200ms ease 300ms;
+  }
+}
+
 /* Nytt för torsdag börjar här: 
 @media screen and (max-width: 1063px) {
   body {

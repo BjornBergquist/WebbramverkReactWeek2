@@ -1,5 +1,31 @@
 
+// .hamburger
+const hamburger = document.querySelector(".hamburger")
 
+console.log(hamburger);
+
+// .mainnav ul
+const navList = document.querySelector(".mainnav ul")
+
+console.log(navList);
+
+hamburger.setAttribute("onclick", "showHamburger()")
+
+const showHamburger = () => {
+    if (hamburger.classList.contains("hamburger--open")) {
+        hamburger.classList.remove("hamburger--open")
+        navList.classList.remove(
+            "navlist--open"
+        )
+    } else {
+        {
+            hamburger.classList.add("hamburger--open")
+            navList.classList.add(
+                "navlist--open"
+            )
+        }
+    }
+}
 
 
 

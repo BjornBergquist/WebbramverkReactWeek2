@@ -59,3 +59,19 @@ div {
     flex-direction: column;
   }
 }
+
+.btn {
+  cursor: pointer;
+  background-color: var(--clr-accent-dark);
+  color: var(--clr-secondary-light);
+  margin-inline: 2em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  box-shadow: inset 0 0 0 0.125em white;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: inset 0 0 0 0.33em white;
+}

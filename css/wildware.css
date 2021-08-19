@@ -84,6 +84,15 @@ header {
 }
 
 @media screen and (max-width: 1063px) {
+  .hamburger__line1,
+  .hamburger__line3 {
+    transition: transform 350ms ease;
+  }
+
+  .hamburger__line2 {
+    transition: transform 350ms ease, opacity 200ms ease 100ms;
+  }
+
   .hamburger--open .hamburger__line1 {
     transform: translatey(0.425em) rotate(45deg);
   }
